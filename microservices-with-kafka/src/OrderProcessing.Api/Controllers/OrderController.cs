@@ -1,11 +1,11 @@
 using System;
 using System.Threading.Tasks;
-using Api.Models;
+using OrderProcessing.Api.Models;
 using Confluent.Kafka;
 using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
 
-namespace Api.Controllers
+namespace OrderProcessing.Api.Controllers
 {
     [Route("api/[controller]")]
     public class OrderController : ControllerBase

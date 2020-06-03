@@ -1,4 +1,4 @@
-namespace Api.Models
+namespace OrderProcessing.Api.Models
 {
     public class OrderRequest
     {

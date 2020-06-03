@@ -1,10 +1,10 @@
-﻿namespace Api.Services
+﻿namespace OrderProcessing.Api.Services
 {
     using Microsoft.Extensions.Hosting;
     using System.Threading;
     using System.Threading.Tasks;
     using System;
-    using Api.Models;
+    using OrderProcessing.Api.Models;
     using Newtonsoft.Json;
     using Confluent.Kafka;
 
@@ -18,6 +18,7 @@
             this.producerConfig = producerConfig;
             this.consumerConfig = consumerConfig;
         }
+
         protected override async Task ExecuteAsync(CancellationToken stoppingToken)
         {
             Console.WriteLine("OrderProcessing Service Started");

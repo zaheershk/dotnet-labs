@@ -1,4 +1,4 @@
-namespace Api
+namespace OrderProcessing.Api
 {
     using Confluent.Kafka;
     using System;

@@ -6,8 +6,10 @@ MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OrderProcessing.Api", "src\OrderProcessing.Api\OrderProcessing.Api.csproj", "{03C9B522-2C2D-4BB2-A23E-3186E092297E}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{DAB95FF2-A082-4C7F-B5C8-0DFB08551150}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "setup", "setup", "{931C5C57-B353-4721-8844-0D0C37B02226}"
 	ProjectSection(SolutionItems) = preProject
-		docker-compose.yml = docker-compose.yml
+		setup\docker-compose.yml = setup\docker-compose.yml
 	EndProjectSection
 EndProject
 Global

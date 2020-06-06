@@ -5,12 +5,12 @@
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
-    <DocumentationFile>obj\Debug\netcoreapp3.1\CustomerSvc.Api.xml</DocumentationFile>
+    <DocumentationFile>obj\Debug\netcoreapp3.1\OrderSvc.Api.xml</DocumentationFile>
     <NoWarn>1701;1702;1591</NoWarn>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
-    <DocumentationFile>obj\Debug\netcoreapp3.1\CustomerSvc.Api.xml</DocumentationFile>
+    <DocumentationFile>obj\Debug\netcoreapp3.1\OrderSvc.Api.xml</DocumentationFile>
     <NoWarn>1701;1702;1591</NoWarn>
   </PropertyGroup>
 
@@ -26,10 +26,15 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Customer.App\CustomerSvc.App.csproj" />
-    <ProjectReference Include="..\Customer.Data\CustomerSvc.Data.csproj" />
-    <ProjectReference Include="..\Customer.Domain\CustomerSvc.Domain.csproj" />
-    <ProjectReference Include="..\Customer.Messaging\CustomerSvc.Messaging.csproj" />
+    <ProjectReference Include="..\OrderSvc.App\OrderSvc.App.csproj" />
+    <ProjectReference Include="..\OrderSvc.Data\OrderSvc.Data.csproj" />
+    <ProjectReference Include="..\OrderSvc.Messaging\OrderSvc.Messaging.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Update="appsettings.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
 
 </Project>

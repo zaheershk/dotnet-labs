@@ -9,15 +9,30 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CustomerService", "Customer
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "OrderService", "OrderService", "{4C540092-0ECA-4A6A-8325-A270C233CFC2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CustomerSvc.Api", "src\CustomerService\Customer.Api\CustomerSvc.Api.csproj", "{46FA646E-54CC-4D4A-B922-4A61F98AF3AF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CustomerSvc.Api", "src\CustomerService\Customer.Api\CustomerSvc.Api.csproj", "{46FA646E-54CC-4D4A-B922-4A61F98AF3AF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CustomerSvc.Data", "src\CustomerService\Customer.Data\CustomerSvc.Data.csproj", "{558B1DC4-6801-4E43-9314-75BAD6932AED}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CustomerSvc.Data", "src\CustomerService\Customer.Data\CustomerSvc.Data.csproj", "{558B1DC4-6801-4E43-9314-75BAD6932AED}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CustomerSvc.Domain", "src\CustomerService\Customer.Domain\CustomerSvc.Domain.csproj", "{F24F36D2-10CB-4FB8-A01A-87A125F0B3A7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CustomerSvc.Domain", "src\CustomerService\Customer.Domain\CustomerSvc.Domain.csproj", "{F24F36D2-10CB-4FB8-A01A-87A125F0B3A7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CustomerSvc.App", "src\CustomerService\Customer.App\CustomerSvc.App.csproj", "{0654A0ED-4BB4-4867-AA07-EDD690865CD5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CustomerSvc.App", "src\CustomerService\Customer.App\CustomerSvc.App.csproj", "{0654A0ED-4BB4-4867-AA07-EDD690865CD5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CustomerSvc.Messaging", "src\CustomerService\Customer.Messaging\CustomerSvc.Messaging.csproj", "{AFC1017D-86E0-4466-B03D-612044D38191}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CustomerSvc.Messaging", "src\CustomerService\Customer.Messaging\CustomerSvc.Messaging.csproj", "{AFC1017D-86E0-4466-B03D-612044D38191}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OrderSvc.Api", "src\OrderService\OrderSvc.Api\OrderSvc.Api.csproj", "{5D1A06C2-2F20-4D32-931C-9D73912B7F7C}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OrderSvc.App", "src\OrderService\OrderSvc.App\OrderSvc.App.csproj", "{DC907892-4772-47D7-87C2-D21826CF9AA4}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OrderSvc.Data", "src\OrderService\OrderSvc.Data\OrderSvc.Data.csproj", "{686425F1-8C24-4861-A95F-E1ECD8645406}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OrderSvc.Domain", "src\OrderService\OrderSvc.Domain\OrderSvc.Domain.csproj", "{05DBE598-4EA1-49A9-BAA1-075F36BD89AE}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OrderSvc.Messaging", "src\OrderService\OrderSvc.Messaging\OrderSvc.Messaging.csproj", "{BF4F4453-94B8-4738-BE53-4075EA6F5542}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "setup", "setup", "{79A730A2-DD6D-4C8B-A734-308BCAE82D63}"
+	ProjectSection(SolutionItems) = preProject
+		setup\docker-compose.yml = setup\docker-compose.yml
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,6 +60,26 @@ Global
 		{AFC1017D-86E0-4466-B03D-612044D38191}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AFC1017D-86E0-4466-B03D-612044D38191}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AFC1017D-86E0-4466-B03D-612044D38191}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5D1A06C2-2F20-4D32-931C-9D73912B7F7C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5D1A06C2-2F20-4D32-931C-9D73912B7F7C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5D1A06C2-2F20-4D32-931C-9D73912B7F7C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5D1A06C2-2F20-4D32-931C-9D73912B7F7C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DC907892-4772-47D7-87C2-D21826CF9AA4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DC907892-4772-47D7-87C2-D21826CF9AA4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DC907892-4772-47D7-87C2-D21826CF9AA4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DC907892-4772-47D7-87C2-D21826CF9AA4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{686425F1-8C24-4861-A95F-E1ECD8645406}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{686425F1-8C24-4861-A95F-E1ECD8645406}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{686425F1-8C24-4861-A95F-E1ECD8645406}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{686425F1-8C24-4861-A95F-E1ECD8645406}.Release|Any CPU.Build.0 = Release|Any CPU
+		{05DBE598-4EA1-49A9-BAA1-075F36BD89AE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{05DBE598-4EA1-49A9-BAA1-075F36BD89AE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{05DBE598-4EA1-49A9-BAA1-075F36BD89AE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{05DBE598-4EA1-49A9-BAA1-075F36BD89AE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BF4F4453-94B8-4738-BE53-4075EA6F5542}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BF4F4453-94B8-4738-BE53-4075EA6F5542}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BF4F4453-94B8-4738-BE53-4075EA6F5542}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BF4F4453-94B8-4738-BE53-4075EA6F5542}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -57,6 +92,11 @@ Global
 		{F24F36D2-10CB-4FB8-A01A-87A125F0B3A7} = {BB36F171-4624-4070-A732-73E2A5C1A1F4}
 		{0654A0ED-4BB4-4867-AA07-EDD690865CD5} = {BB36F171-4624-4070-A732-73E2A5C1A1F4}
 		{AFC1017D-86E0-4466-B03D-612044D38191} = {BB36F171-4624-4070-A732-73E2A5C1A1F4}
+		{5D1A06C2-2F20-4D32-931C-9D73912B7F7C} = {4C540092-0ECA-4A6A-8325-A270C233CFC2}
+		{DC907892-4772-47D7-87C2-D21826CF9AA4} = {4C540092-0ECA-4A6A-8325-A270C233CFC2}
+		{686425F1-8C24-4861-A95F-E1ECD8645406} = {4C540092-0ECA-4A6A-8325-A270C233CFC2}
+		{05DBE598-4EA1-49A9-BAA1-075F36BD89AE} = {4C540092-0ECA-4A6A-8325-A270C233CFC2}
+		{BF4F4453-94B8-4738-BE53-4075EA6F5542} = {4C540092-0ECA-4A6A-8325-A270C233CFC2}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {D8053A76-FB81-4327-A7A4-446F991D3C0A}
